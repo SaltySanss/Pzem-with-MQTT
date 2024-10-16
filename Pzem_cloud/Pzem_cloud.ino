@@ -7,13 +7,13 @@
 WiFiClient   espClient;
 PubSubClient client(espClient);                     
 
-char  ssid[]             = "Salty";           //Wifi user
-char  password[]         = "SaltySanss";           // Wifi password
-const char* mqttserver   = "192.168.88.184";
+char  ssid[]             = "";           //Wifi user
+char  password[]         = "";           // Wifi password
+const char* mqttserver   = "";            // ip home assistant
 const int   mqttPort     = 1883;
 const char* mqttclient   = "test";             //กรณีมีบอร์ดหลายตัวจำเป็นต้องตั้งชื่อ client ให้แตกต่างกันเพื่อส่งไป mqtt
-const char* mqttUser     = "saltysanss";
-const char* mqttPassword = "san08753";
+const char* mqttUser     = "";
+const char* mqttPassword = "";
 const char* Topic        = "test";             //ชื่อ topic ที่จะส่งไปยัง mqtt
 
 String myIP;
